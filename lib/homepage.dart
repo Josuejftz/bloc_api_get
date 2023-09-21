@@ -48,17 +48,24 @@ class HomePage extends StatelessWidget {
                         color: Theme.of(context).primaryColor,
                         child: ListTile(
                             title: Text(
-                              '${userList[index].firstName}  ${userList[index].lastName}',
+                              '${userList[index].title}  ${userList[index].id}',
                               style: const TextStyle(color: Colors.white),
                             ),
                             subtitle: Text(
-                              '${userList[index].email}',
+                              '${userList[index].type}',
                               style: const TextStyle(color: Colors.white),
                             ),
                             leading: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  userList[index].avatar.toString()),
-                            ))),
+                              backgroundImage: 
+                              
+                              
+                              NetworkImage(
+                                  userList[index].photo_slug.toString()),
+
+                            ),
+                            
+                            
+                            )),
                   );
                 });
           }
